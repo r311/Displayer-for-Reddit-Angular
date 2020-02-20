@@ -1,5 +1,16 @@
-<div [ngClass]="setClasses()" (click)="onClick(post)">
-    <p>
-        {{ post.data.title }}
-    </p>
+<div [ngClass]="setClasses()" (click)="onClick(post)" fxLayout="row" fxLayoutAlign="space-between center" >
+    <div class="left" *ngIf="hasThumbnail()">
+        <img class="thumbnail" src="{{post.data.thumbnail}}">
+    </div>
+    <div class="middle">
+        <p>
+            {{ post.data.title }}
+        </p>
+    </div>
+    <div fxFlex="15"> 
+        <div class="top"><img class="up" src="../../../assets/up.png"/> {{ post.data.ups }} </div>
+        <div class="bottom">
+            <img class="comment" src="../../../assets/comment.png"/> {{post.data.num_comments}}
+        </div>
+    </div>
 </div>

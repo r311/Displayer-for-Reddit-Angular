@@ -1,11 +1,53 @@
 .container {
     border: 2px solid rgb(175, 175, 175);
     background-color: rgb(245, 235, 235);
-    min-width:70vw;
-    margin:  5px 0 5px 0px;
+    min-width: 80vw;
+    margin:  5px 0px 5px 0px;
     padding: 0px 5px 0px 5px;
+    display: flex;
 }
 
 .is-clicked {
     background-color: rgb(185, 240, 237);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.middle {
+ margin: auto;
+ margin-left: 5px;
+ width: 100%;
+}
+
+.left {
+    margin: auto;
+    flex-grow: 1;
+}
+
+.thumbnail {
+    border: 2px solid rgb(175, 175, 175);
+    height: 50px;
+    width: 50px;
+}
+
+.comment {
+    height: 20px;
+    margin: auto;
+    margin-left: 5px;
+}
+
+.up {
+    height: 15px;
+    margin: auto;
+}
+
+.top {
+    border-bottom: 2px solid rgb(175, 175, 175);
+    margin: 5px;
+}
+
+.bottom {
+    margin-bottom: 4px;
 }
