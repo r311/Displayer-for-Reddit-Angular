@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-displayer';
+
+  returnTitle(title:string):void{
+    this.title = title;
+  }
 }
